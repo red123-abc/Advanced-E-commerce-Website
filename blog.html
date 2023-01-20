@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>E-commerce | Blogs</title>
+
+        <link rel="stylesheet" type="text/css" href = "style.css"> 
+        <link rel="stylesheet" type="text/css" href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    
+    <body>
+       
+        <nav class="nav nav_top">
+            <div class="logo">
+                <a href="index.html"><img src="images/image-01.jpg" width="150"></a>
+            </div>
+            <div class="nav_side">
+                <a href="about.html">About Us</a>
+                <a href="service.html">Services</a>
+                <a href="blog.html">Blogs</a>
+                <a href="contact.html">Contact</a>
+                <a href=" ">Login/Reigster</a>
+            </div>
+
+        </nav><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <div class="blog_container">
+            <h2>Blogs</h2><br><br><br>
+            <img src="images/blog1.jpg"><br><br>
+            <p>Aliquam at vestibulum massa. Ut ut consequat velit,
+                eget consectetur leo. Vivamus nec lacinia lectus. Sed fermentum at metus nec egestas. Nullam vel 
+                enim ut dolor dictum vestibulum. Aliquam at vestibulum massa. Ut ut consequat velit,
+                eget consectetur leo. Vivamus nec lacinia lectus. Sed fermentum at metus nec egestas. Nullam vel 
+                enim ut dolor dictum vestibulum. Aliquam at vestibulum massa. Ut ut consequat velit,
+                eget consectetur leo. Vivamus nec lacinia lectus. Sed fermentum at metus nec egestas. Nullam vel 
+                enim ut dolor dictum vestibulum.</p><br><br>
+            
+                <img src="images/blog2.jpg"><br><br>
+            <p>Aliquam at vestibulum massa. Ut ut consequat velit,
+                eget consectetur leo. Vivamus nec lacinia lectus. Sed fermentum at metus nec egestas. Nullam vel 
+                enim ut dolor dictum vestibulum. Aliquam at vestibulum massa. Ut ut consequat velit,
+                eget consectetur leo. Vivamus nec lacinia lectus. Sed fermentum at metus nec egestas. Nullam vel 
+                enim ut dolor dictum vestibulum. Aliquam at vestibulum massa. Ut ut consequat velit,
+                eget consectetur leo. Vivamus nec lacinia lectus. Sed fermentum at metus nec egestas. Nullam vel 
+                enim ut dolor dictum vestibulum.</p>
+                
+        </div>
+
+
+        <div class="feed">
+            <h2>Write a Review</h2>
+            <div class="feed_form">
+               <form name="submit feedback" method="post">
+                   <input type="text" name="Name" placeholder="Name"><br>
+                   <input type="email" name="Email" placeholder="Email ID"><br>
+                   <input type="number" name="Number" placeholder="Contact Number"><br>
+                   <textarea rows="5" cols="7" name="Review" placeholder="Write your review"></textarea>
+                   <br>
+                   <button type="submit">Submit</button>
+               </form> 
+            </div>
+        </div>
+   
+   
+   
+           <footer>
+               <div class="footer_logo">
+                   <a href="#"><img src="images/image-01.jpg" width="150"></a>
+               </div>
+               <div class="pages">
+                   <h3>Pages</h3>
+                   <a href="about.html">About Us</a>
+                   <a href="service.html">Services</a>
+                   <a href="blog.html">Blogs</a>
+                   <a href="">Login</a>
+                   <a href="">Sign Up</a>
+               </div>
+               <br>
+               <div class="doc">
+                   <h3>Documents</h3>
+                   <a href="">Privacy Policy</a>
+                   <a href="">Terms Of Use</a>
+                   <a href="">Refund Policy</a>
+               </div>
+               <br>
+               <div class="social">
+                   <h3>Follow Us</h3>
+                   <a href="https://www.facebook.com/pages/category/Education-website/1Stopai-102490171820303/" target="_blank"><i class="fa fa-facebook" aria hidden = "true"></i></a>
+                   <a href="https://www.linkedin.com/company/1stop-ai/?originalSubdomain=in" target="_blank"><i class="fa fa-linkedin" aria hidden = "true"></i></a>
+                   <a href="https://www.instagram.com/1stop.ai/?hl=en" target="_blank"><i class="fa fa-instagram" aria hidden = "true"></i></a>
+   
+               </div>
+               <br>
+               <div class="contact">
+                   <h3>Contact Us</h3>
+                   <a href="https://api.WhatsApp.com/send?phone=+919876543210" target="_blank"><i class="fa fa-whatsapp" aria hidden = "true"></i></a>
+                   <a href="tel: +919876543210"><i class="fa fa-phone" aria hidden = "true"></i></a>
+                   <a href="mailto: support@1stop.ai"><i class="fa fa-envelope-o" aria hidden = "true"></i></a>
+               </div>
+               <br>
+               <hr>
+               <p>Copyright &copy; 2021 1stop. All rights reserved.</p>
+   
+           </footer>
+   
+   
+   
+           <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+   
+   
+           <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+   
+   
+           <script type="text/javascript">
+               const scriptURL = 'https://script.google.com/macros/s/AKfycbx3TYZx0BVpHWVPXWuXbP-OwOU6I9MpfZUtYLxmui-SYnqyiql86ClmZIYPizvNt08a/exec'
+               const form = document.forms['submit feedback']
+             
+               form.addEventListener('submit', e => {
+                 e.preventDefault()
+                 fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                   .then(response => alert("Thank you for your review ! Hope you had great shopping experience with us"))
+                   .catch(error => console.error('Error!', error.message))
+               })
+           </script>
+   
+   
+   
+       </body>
+   
+   
+   
+   
+   </html>        
